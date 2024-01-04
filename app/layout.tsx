@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="element  ">
+      <body className="element text-white ">
        
     <>
         <Navbar />
