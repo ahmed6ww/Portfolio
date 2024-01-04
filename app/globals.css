@@ -4,12 +4,15 @@
 
 
 body {
+  
+  /* font-family: "Cera CY Bold"; */
   color: rgb(var(--foreground-rgb));
   /* background-image: radial-gradient(#7a7777, #090808); */
-  background : #090808 
+  background : #1a1b20
+  
   
   
 }
 .element {
-  background: radial-gradient(#1b1b1b 0%, #090808  );
+  background: radial-gradient(#26272e -30%, #000000  );
 }

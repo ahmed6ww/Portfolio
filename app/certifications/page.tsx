@@ -2,7 +2,7 @@ import React from 'react'
 
 const certifications = () => {
   return (
-    <div className='bg-white'>certifications</div>
+    <div className='h-screen'>certifications</div>
   )
 }
 
