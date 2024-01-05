@@ -1,17 +1,26 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const Home = () => {
   return (
     <section className='h-full w-full shadow-gray-50' >
+   
+      
       <main className=' relative flex  h-screen flex-col justify-between sm:w-full sm:h-screen '>
-        <div className='  flex items-center justify-center h-screen flex-col flex-grow '
-        >
-          <h1 className='font-extrabold text-8xl drop-shadow-xl '>AHMED</h1>
+        <motion.div className='  flex items-center justify-center h-screen flex-col flex-grow '
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1}}
+        transition={{ duration: 1 }}>
+        
+          <h1 className='font-extrabold text-8xl drop-shadow-xl '
+          
+          >AHMED</h1>
           <p className='flex justify-end w-[335px] drop-shadow-2xl ' >Full Stack Web Developer</p>
 
-        </div >
+        </motion.div >
 
 
 
