@@ -6,19 +6,21 @@ import Link from "next/link"
 function Navbar() {
   return (
     <>
-      <nav className=' flex '>
+    
+      <nav className=' flex shadow-2xl  z-10'>
         <div className='flex ml-7 '>
-          <Link href='./home' className="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
+          <Link href='./home' className=" relative object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
             <Image
               src='/home-logo.png'
               height={90}
               width={90}
               alt='Logo'
+              className=" "
             /></Link>
          
         </div>
 
-        <div className='drop-shadow-2xl flex flex-row p-4 gap-9 m-auto text-lg tracking-wider '>
+        <div className=' drop-shadow-2xl flex flex-row p-4 m-auto gap-9 justify-center text-lg tracking-wider '>
           <Link href='/projects' >PROJECTS
           </Link>
           <Link href='/certifications'>CERTIFICATIONS
@@ -29,6 +31,7 @@ function Navbar() {
 
         </div>
       </nav>
+      
     </>
   )
 }
