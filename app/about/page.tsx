@@ -1,7 +1,10 @@
-'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { MotionDiv, MotionH1, MotionP } from '@/components/MotionDiv'
+
+
 
 
 
@@ -9,7 +12,7 @@ const about = () => {
   return (<>
     <section className='lg:w-screen flex  lg:'>
       <div className='relative h-screen flex flex-row justify-center '>
-        <motion.div className='absolute  md:left-40   lg:left-[900px] lg:top-[250px] xl: 2xl:left-[950px]  2xl:right-0 2xl:top-[100px] p-20 '
+        <MotionDiv className='absolute  md:left-40   lg:left-[900px] lg:top-[250px] xl: 2xl:left-[950px]  2xl:right-0 2xl:top-[100px] p-20 '
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -34,9 +37,9 @@ const about = () => {
             alt='Backgrounf Image'
             className='invisible lg:visible'
           /> */}
-        </motion.div>
+        </MotionDiv>
         <div className=' xl:mt-[130px] xl:ml-6 lg:mt-36'>
-          <motion.h1 className=' mt-20 font-bold text-2xl md:text-3xl lg:text-4xl xl:tracking-wider '
+          <MotionH1 className=' mt-20 font-bold text-2xl md:text-3xl lg:text-4xl xl:tracking-wider '
             initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: 30 }}
             transition={{duration:0.8, delay:0.8}}
@@ -45,12 +48,12 @@ const about = () => {
 
 
 
-          >About</motion.h1>
-          <motion.p className=' mt-10 ml-12 mr-6 font-light tracking-wider text-lg md:text-xl md:mr-20 lg:text-2xl lg:left-[200px] lg:blur-0 lg:mr-[300px]  xl:font-light xl:ml-[110px]  xl:mr-[600px] 2xl:mr-[1000px]   '
+          >About</MotionH1>
+          <MotionP className=' mt-10 ml-12 mr-6 font-light tracking-wider text-lg  md:text-xl md:mr-20 lg:text-2xl lg:left-[200px] lg:blur-0 lg:mr-[300px]  xl:font-light xl:ml-[110px]  xl:mr-[700px] 2xl:mr-[1000px]  '
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-          >Hello! I'm Ahmed, a Full Stack Web Developer and AI enthusiast. My expertise lies in crafting seamless web solutions with a touch of creativity. Passionate about the intersection of technology and intelligence, I create cutting-edge applications. My skills extend to Graphic Design, adding a unique dimension to my work. With a holistic approach, I ensure delightful user experiences. A lifelong learner, I stay at the forefront of tech advancements, always seeking new challenges. Join me in building extraordinary projects where code meets creativity. Welcome to my digital space - a showcase of tech, design, and endless possibilities.</motion.p>
+          >Hello! I'm Ahmed, a Full Stack Web Developer and AI enthusiast. My expertise lies in crafting seamless web solutions with a touch of creativity. Passionate about the intersection of technology and intelligence, I create cutting-edge applications. My skills extend to Graphic Design, adding a unique dimension to my work. With a holistic approach, I ensure delightful user experiences. A lifelong learner, I stay at the forefront of tech advancements, always seeking new challenges. Join me in building extraordinary projects where code meets creativity. Welcome to my digital space - a showcase of tech, design, and endless possibilities.</MotionP>
 
 
 
@@ -59,13 +62,13 @@ const about = () => {
 
 
 
-          <motion.h1 className='font-bold text-3xl mt-7 xl:mt-20 xl:tracking-wider '
+          <MotionH1 className='font-bold text-3xl mt-7 xl:mt-20 xl:tracking-wider '
             initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: 30 }}
             transition={{ duration: 0.8, delay: 0.8 }}>
             Languages
-          </motion.h1>
-          <motion.div className=' mt-10 flex flex-col gap-3 text-md ml-12 xl:text- xl:tracking-wider xl:font-light xl:ml-[110px] md:text-lg'
+          </MotionH1>
+          <MotionDiv className=' mt-10 flex flex-col gap-3 text-md ml-12 xl:text- xl:tracking-wider xl:font-light xl:ml-[110px] md:text-lg'
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -75,7 +78,7 @@ const about = () => {
             <h4>German</h4>
             <h4>Punjabi</h4>
 
-          </motion.div>
+          </MotionDiv>
         </div>
 
 
