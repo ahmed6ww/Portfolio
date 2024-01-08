@@ -22,12 +22,12 @@ const Home = () => {
   {/* <video src='/video3.mp4'autoPlay loop muted className=' absolute -z-1 opacity-10'/> */}
   
          
-          <h1 className='font-extrabold text-[180px] drop-shadow-xl '
+          <h1 className='font-extrabold text-8xl drop-shadow-xl '
 
-          >سلام</h1>
+          >AHMED</h1>
           
           
-          <p className='flex justify-end w-[335px] drop-shadow-2xl ' >Full Stack Web Developer</p>
+          <p className='flex justify-end w-[355px] tracking-wider text-lg drop-shadow-2xl ' >Full Stack Web Developer</p>
         
         </motion.div >
 

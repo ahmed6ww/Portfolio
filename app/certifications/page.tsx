@@ -27,7 +27,7 @@ const certifications = () => {
             alt="pdf"
             height={420}
             width={420}
-            className="rounded-lg "
+            className="rounded-2xl "
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">Principles of UI/UX Design</h1>
         </Link>
@@ -38,7 +38,7 @@ const certifications = () => {
             alt="pdf"
             height={420}
             width={420}
-            className="rounded-xl "
+            className="rounded-2xl "
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">Version Control</h1>
         </Link>
@@ -64,7 +64,7 @@ const certifications = () => {
             alt="pdf"
             height={420}
             width={420}
-            className="rounded-lg "
+            className="rounded-2xl "
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">Python</h1>
         </Link>
@@ -75,7 +75,7 @@ const certifications = () => {
             alt="pdf"
             height={420}
             width={420}
-            className="rounded-xl "
+            className="rounded-2xl "
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">TypeScript</h1>
         </Link>
@@ -100,7 +100,7 @@ const certifications = () => {
             alt="pdf"
             height={420}
             width={420}
-            className="rounded-lg "
+            className="rounded-2xl "
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">AI For Everyone</h1>
         </Link>
@@ -111,7 +111,7 @@ const certifications = () => {
             alt="pdf"
             height={420}
             width={420}
-            className="rounded-xl "
+            className="rounded-2xl "
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">Generative AI For Everyone</h1>
         </Link>

@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
     
-      <nav className=' flex shadow-2xl  z-10'>
+      <nav className=' flex  '>
         <div className='flex ml-7 '>
           <Link href='./home' className=" relative object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
             <Image
@@ -20,7 +20,7 @@ function Navbar() {
          
         </div>
 
-        <div className=' drop-shadow-2xl flex flex-row p-4 m-auto gap-9 justify-center text-lg tracking-wider '>
+        <div className=' invisible xl:visible  drop-shadow-2xl flex flex-row p-4 m-auto gap-9 justify-center text-lg tracking-wider '>
           <Link href='/projects' >PROJECTS
           </Link>
           <Link href='/certifications'>CERTIFICATIONS
