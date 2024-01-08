@@ -1,7 +1,9 @@
-"use client"
+
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
+
+import { MotionDiv, MotionH1, MotionP } from '@/components/MotionDiv'
 
 
 
@@ -14,7 +16,7 @@ const certifications = () => {
                                {/* --------------Web Development-------------- */}
 
       <h1 className="flex justify-center  mt-[280px] text-6xl font-extrabold tracking-wider " >Web Development</h1>
-      <motion.div className='flex justify-center gap-14 text-black  mt-32 ml-9 target '
+      <MotionDiv className='flex justify-center gap-14 text-black  mt-32 ml-9 target '
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
@@ -42,16 +44,16 @@ const certifications = () => {
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">Version Control</h1>
         </Link>
-      </motion.div>
+      </MotionDiv>
 
                               {/* --------------Programming Langauges-------------- */}              
 
 
 
-      <motion.h1 className="flex justify-center mt-44 text-6xl font-extrabold tracking-wider" 
+      <MotionH1 className="flex justify-center mt-44 text-6xl font-extrabold tracking-wider" 
       
-      >Programming Langauges</motion.h1>
-      <motion.div className='flex justify-center gap-14 text-black  mt-32 ml-9 target '
+      >Programming Langauges</MotionH1>
+      <MotionDiv className='flex justify-center gap-14 text-black  mt-32 ml-9 target '
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
@@ -79,7 +81,7 @@ const certifications = () => {
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">TypeScript</h1>
         </Link>
-      </motion.div>
+      </MotionDiv>
 
 
                               {/* --------------Programming Langauges-------------- */} 
@@ -87,7 +89,7 @@ const certifications = () => {
 
 
       <h1 className="flex justify-center mt-44 text-6xl font-extrabold tracking-wider" >Artificial Intelligence</h1>
-      <motion.div className='flex justify-center gap-14 text-black  mt-32 ml-9 target '
+      <MotionDiv className='flex justify-center gap-14 text-black  mt-32 ml-9 target '
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -115,7 +117,7 @@ const certifications = () => {
           />
           <h1 className="text-white justify-center flex mt-4 text-lg">Generative AI For Everyone</h1>
         </Link>
-      </motion.div>
+      </MotionDiv>
 
 
 
