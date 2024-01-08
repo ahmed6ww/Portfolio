@@ -17,18 +17,18 @@ const about = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
 
-         
+
 
 
 
 
         >
           <Image
-          src='/m6-2.svg'
-          height={800}
-          width={800}
-          alt='Logo'
-          className='invisible rounded-[70px] blur-sm opacity-20  md   md:w-[00px] md:mt-24 md:opacity-sm lg:visible 2xl:visible lg:w-[1700px] lg:blur-0 lg:opacity-100 lg:mr-[00px] lg:mt-0 xl:blur-0 2xl:w-[800px]  ' />
+            src='/m6-2.svg'
+            height={800}
+            width={800}
+            alt='Logo'
+            className='invisible rounded-[70px] blur-sm opacity-20  md   md:w-[00px] md:mt-24 md:opacity-sm lg:visible 2xl:visible lg:w-[1700px] lg:blur-0 lg:opacity-100 lg:mr-[00px] lg:mt-0 xl:blur-0 2xl:w-[800px]  ' />
           {/* <Image
             src='/about.png'
 
@@ -42,7 +42,7 @@ const about = () => {
           <MotionH1 className=' mt-20 font-bold text-2xl md:text-3xl lg:text-4xl xl:tracking-wider '
             initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: 30 }}
-            transition={{duration:0.8, delay:0.8}}
+            transition={{ duration: 0.8, delay: 0.8 }}
 
 
 
@@ -53,7 +53,9 @@ const about = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-          >Hello! I'm Ahmed, a Full Stack Web Developer and AI enthusiast. My expertise lies in crafting seamless web solutions with a touch of creativity. Passionate about the intersection of technology and intelligence, I create cutting-edge applications. My skills extend to Graphic Design, adding a unique dimension to my work. With a holistic approach, I ensure delightful user experiences. A lifelong learner, I stay at the forefront of tech advancements, always seeking new challenges. Join me in building extraordinary projects where code meets creativity. Welcome to my digital space - a showcase of tech, design, and endless possibilities.</MotionP>
+          >
+            
+Hi, I'm Ahmed, a Full Stack Web Developer and AI enthusiast. I craft seamless web solutions with a creative touch, blending technology and intelligence. Skilled in Graphic Design, I focus on delightful user experiences. Let's build extraordinary projects where code meets creativity in my digital space.</MotionP>
 
 
 
