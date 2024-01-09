@@ -1,5 +1,4 @@
 
-
 import Image from "next/image"
 import Link from "next/link"
 
@@ -7,20 +6,20 @@ function Navbar() {
   return (
     <>
     
-      <nav className=' flex  '>
+      <nav className=' flex h-  '>
         <div className='flex ml-7 '>
-          <Link href='./home' className=" relative object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
+          <Link href='./home' className="    2xl:w-30 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
             <Image
               src='/home-logo.png'
               height={90}
               width={90}
               alt='Logo'
-              className=" "
+              className=""
             /></Link>
          
         </div>
 
-        <div className=' invisible xl:visible  drop-shadow-2xl flex flex-row p-4 m-auto gap-9 justify-center text-lg tracking-wider '>
+        <div className=' invisible 2xl:visible  drop-shadow-2xl flex flex-row p-4 2xl:m-auto gap-9 justify-center text-lg tracking-wider '>
           <Link href='/projects' >PROJECTS
           </Link>
           <Link href='/certifications'>CERTIFICATIONS
@@ -37,3 +36,4 @@ function Navbar() {
 }
 
 export default Navbar
+

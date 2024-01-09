@@ -38,7 +38,7 @@ const about = () => {
             className='invisible lg:visible'
           /> */}
         </MotionDiv>
-        <div className=' xl:mt-[130px] xl:ml-6 lg:mt-36'>
+        <div className=' 2xl:mt-[50px] xl:ml-6 lg:mt-36'>
           <MotionH1 className=' mt-20 font-bold text-2xl md:text-3xl lg:text-4xl xl:tracking-wider '
             initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: 30 }}
@@ -54,8 +54,8 @@ const about = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            
-Hi, I'm Ahmed, a Full Stack Web Developer and AI enthusiast. I craft seamless web solutions with a creative touch, blending technology and intelligence. Skilled in Graphic Design, I focus on delightful user experiences. Let's build extraordinary projects where code meets creativity in my digital space.</MotionP>
+
+            Hi, I'm Ahmed, a Full Stack Web Developer and AI enthusiast. I craft seamless web solutions with a creative touch, blending technology and intelligence. Skilled in Graphic Design, I focus on delightful user experiences. Let's build extraordinary projects where code meets creativity in my digital space.</MotionP>
 
 
 
@@ -80,6 +80,27 @@ Hi, I'm Ahmed, a Full Stack Web Developer and AI enthusiast. I craft seamless we
             <h4>German</h4>
             <h4>Punjabi</h4>
 
+          </MotionDiv>
+
+          <MotionH1 className='font-bold text-3xl mt-7 xl:mt-20 xl:tracking-wider'
+          initial={{ opacity: 0, x: 0 }}
+          whileInView={{ opacity: 1, x: 30 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          
+          >
+            Partners
+          </MotionH1>
+          <MotionDiv>
+            <MotionDiv className=' ml-10 mt-10'>
+              <Image
+            src='/m7.jpg'
+
+            height={100}
+            width={100}
+            alt='Backgrounf Image'
+            className='rounded-[400rem] '
+          />
+            </MotionDiv>
           </MotionDiv>
         </div>
 
