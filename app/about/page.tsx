@@ -2,7 +2,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { MotionDiv, MotionH1, MotionP } from '@/components/MotionDiv'
+import { MotionDiv, MotionH1, MotionP, MotionButton } from '@/components/MotionDiv'
+import Link from 'next/link'
+
 
 
 
@@ -10,9 +12,9 @@ import { MotionDiv, MotionH1, MotionP } from '@/components/MotionDiv'
 
 const about = () => {
   return (<>
-    <section className='lg:w-screen flex  lg:'>
+    <section className='lg:w-screen flex -mt-10'>
       <div className='relative h-screen flex flex-row justify-center '>
-        <MotionDiv className='absolute  md:left-40   lg:left-[900px] lg:top-[250px] xl: 2xl:left-[950px]  2xl:right-0 2xl:top-[100px] p-20 '
+        <MotionDiv className='absolute top-40 md:left-40  lg:left-[900px] lg:top-[250px] xl: 2xl:left-[950px]  2xl:right-0 2xl:top-[100px] p-20 '
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -85,23 +87,49 @@ const about = () => {
           <MotionH1 className='font-bold text-3xl mt-7 xl:mt-20 xl:tracking-wider'
           initial={{ opacity: 0, x: 0 }}
           whileInView={{ opacity: 1, x: 30 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
           
           >
             Partners
           </MotionH1>
-          <MotionDiv>
-            <MotionDiv className=' ml-10 mt-10'>
+          <MotionDiv 
+             initial={{ opacity: 0, y: 30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, delay: 1.2 }}
+          >
+            <MotionButton className='mt-12 ml-11 md:ml-24 xl:ml-24 lg:ml-24 2xl:ml-24    '
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            >
+              <Link href='https://muhammadammar24.vercel.app' target='_blank'>
               <Image
-            src='/m7.jpg'
+            src='/ammar.svg'
 
             height={100}
-            width={100}
-            alt='Backgrounf Image'
-            className='rounded-[400rem] '
-          />
-            </MotionDiv>
+            width={55}
+            alt='Image'
+            className=' rounded-full 2xl:w-[70px] '
+          /></Link>
+          
+            </MotionButton>
+            <MotionButton className=' ml-10 mt-12'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            >
+              <Link href='' target='_blank'>
+              <Image
+            src='/shayan.jpg'
+
+            height={100}
+            width={55}
+            alt='Image'
+            className=' rounded-full  2xl:w-[70px] '
+          /></Link>
+          
+            </MotionButton>
           </MotionDiv>
+        
+        
         </div>
 
 
