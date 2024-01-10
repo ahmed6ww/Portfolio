@@ -84,20 +84,20 @@ const about = () => {
 
           </MotionDiv>
 
-          <MotionH1 className='font-bold text-3xl mt-7 xl:mt-20 xl:tracking-wider'
+          <MotionH1 className='font-bold text-3xl mt-7 xl:mt-20 xl:tracking-wider '
           initial={{ opacity: 0, x: 0 }}
           whileInView={{ opacity: 1, x: 30 }}
           transition={{ duration: 0.8, delay: 1.2 }}
           
           >
             Partners
-          </MotionH1>
+          </MotionH1 >
           <MotionDiv 
              initial={{ opacity: 0, y: 30 }}
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.8, delay: 1.2 }}
           >
-            <MotionButton className='mt-12 ml-11 md:ml-24 xl:ml-24 lg:ml-24 2xl:ml-24    '
+            <MotionButton className='mt-12 mb-12 ml-11 md:ml-11 lg:ml-11 xl:ml-24   2xl:ml-24    '
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             >
@@ -112,7 +112,7 @@ const about = () => {
           /></Link>
           
             </MotionButton>
-            <MotionButton className=' ml-10 mt-12'
+            <MotionButton className=' ml-10 mt-12 mb-12'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             >
