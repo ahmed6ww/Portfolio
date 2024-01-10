@@ -6,9 +6,9 @@ function Navbar() {
   return (
     <>
     
-      <nav className=' flex h-  '>
+      <nav className='flex   '>
         <div className='flex ml-7 '>
-          <Link href='./home' className="  h-8  2xl:w-30 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
+          <Link href='./home' className="   object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
             <Image
               src='/home-logo.png'
               height={90}
