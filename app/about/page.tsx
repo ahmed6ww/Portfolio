@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 const about = () => {
   return (<>
-    <section className='lg:w-screen flex -mt-10'>
+    <section className='lg:w-screen flex -mt-10 2xl:-mt-0 '>
       <div className='relative h-screen flex flex-row justify-center '>
         <MotionDiv className='absolute top-40 md:left-40  lg:left-[900px] lg:top-[250px] xl: 2xl:left-[950px]  2xl:right-0 2xl:top-[100px] p-20 '
           initial={{ opacity: 0, x: 30 }}
@@ -27,10 +27,10 @@ const about = () => {
         >
           <Image
             src='/m6-2.svg'
-            height={800}
-            width={800}
+            height={1000}
+            width={1000}
             alt='Logo'
-            className='invisible rounded-[70px] blur-sm opacity-20  md   md:w-[00px] md:mt-24 md:opacity-sm lg:visible 2xl:visible lg:w-[1700px] lg:blur-0 lg:opacity-100 lg:mr-[00px] lg:mt-0 xl:blur-0 2xl:w-[800px]  ' />
+            className='invisible rounded-[70px]    xl:w-[1300px] md:mt-24 md:opacity-sm lg:visible xl:visible 2xl:visible lg:w-[1700px] lg:blur-0 lg:opacity-100 lg:mr-[00px] lg:mt-0 xl:blur-0 2xl:w-[800px]  ' />
           {/* <Image
             src='/about.png'
 
@@ -51,7 +51,7 @@ const about = () => {
 
 
           >About</MotionH1>
-          <MotionP className=' mt-10 ml-12 mr-6 font-light tracking-wider text-lg  md:text-xl md:mr-20 lg:text-2xl lg:left-[200px] lg:blur-0 lg:mr-[300px]  xl:font-light xl:ml-[110px]  xl:mr-[700px] 2xl:mr-[1000px]  '
+          <MotionP className=' mt-10 ml-12 mr-6 font-light tracking-wider text-lg  md:text-xl md:mr-20 lg:text-2xl lg:left-[200px] lg:blur-0 lg:mr-[500px]  xl:font-light xl:ml-[110px]  xl:mr-[500px] 2xl:mr-[1000px]  '
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
