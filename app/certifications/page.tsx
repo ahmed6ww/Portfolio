@@ -3,36 +3,43 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 
-import { MotionDiv, MotionH1, MotionP } from '@/components/MotionDiv'
+import { MotionDiv, MotionH1, MotionP, myButton, MotionButton } from '@/components/MotionDiv'
 
 
 
 const certifications = () => {
   return (
-    <div className=' h-full mt-44 '
-    
-    >
+    <div className=' h-full mt-44 '>
 
-                               {/* --------------Web Development-------------- */}
+
+
+      {/* --------------Web Development-------------- */}
 
       <h1 className="flex justify-center   mt-[280px] md:text-6xl text-3xl 2xl:text-6xl font-extrabold tracking-wider " >Web Development</h1>
       <MotionDiv className='flex justify-center gap-14 mr-9 text-black  mt-32 ml-9 target '
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{duration:0.8}}
-    >
-        <Link href="https://coursera.org/share/2d7ddbf74d4fb84bbfcae97c43503c67" target="_blank"
-          className="object-cover transition-transform  duration-300 ease-in-out transform hover:scale-110">
-          <Image
-            src="/principles-of-ux-ui-design.svg"
-            alt="pdf"
-            height={420}
-            width={420}
-            className="rounded-2xl "
-          />
-          <h1 className="text-white justify-center flex mt-4 text-lg">Principles of UI/UX Design</h1>
-        </Link>
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <MotionButton
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          
+        >
+          <Link href="https://coursera.org/share/2d7ddbf74d4fb84bbfcae97c43503c67" target="_blank"
+          >
+            <Image
+              src="/principles-of-ux-ui-design.svg"
+              alt="pdf"
+              height={420}
+              width={420}
+              className="rounded-2xl " />
+            <h1 className="text-white justify-center flex mt-4 text-lg">Principles of UI/UX Design</h1>
+          </Link></MotionButton>
+
+
+
         <Link href="https://coursera.org/share/ded4789af70898162b331507c1a3b722 " target="_blank"
           className="transition-transform duration-300 ease-in-out transform hover:scale-110">
           <Image
@@ -46,18 +53,18 @@ const certifications = () => {
         </Link>
       </MotionDiv>
 
-                              {/* --------------Programming Langauges-------------- */}              
+      {/* --------------Programming Langauges-------------- */}
 
 
 
-      <MotionH1 className="flex justify-center text-center mt-44 md:text-6xl ml text-3xl 2xl:text-6xl font-extrabold tracking-wider" 
-      
+      <MotionH1 className="flex justify-center text-center mt-44 md:text-6xl ml text-3xl 2xl:text-6xl font-extrabold tracking-wider"
+
       >Programming Langauges</MotionH1>
       <MotionDiv className='flex justify-center mr-9 gap-14 text-black  mt-32 ml-9 target '
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{duration:0.8,}}
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, }}
       >
         <Link href="https://coursera.org/share/f0a0bacaf429dafe269d089a8f76996e" target="_blank"
           className="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
@@ -84,7 +91,7 @@ const certifications = () => {
       </MotionDiv>
 
 
-                              {/* --------------Programming Langauges-------------- */} 
+      {/* --------------Programming Langauges-------------- */}
 
 
 
@@ -93,8 +100,8 @@ const certifications = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        transition={{duration:0.8}}
-        >
+        transition={{ duration: 0.8 }}
+      >
         <Link href="https://coursera.org/share/3e9244d99d30add06a246485192da502" target="_blank"
           className="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110">
           <Image
