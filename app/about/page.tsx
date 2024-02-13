@@ -113,7 +113,7 @@ const about = () => {
                 height={10}
                 width={10}
                 alt="Logo"
-                className="w-[400px] md:w-[500px] lg:w-[700px] lg:mr-20 lg:mt-32   rounded-2xl mt-12 "
+                className="w-[400px] md:w-[500px] lg:w-[700px] lg:mr-20 lg:mt-32   rounded-[60px] mt-12 "
               />
             </MotionDiv>
           </div>
