@@ -6,13 +6,13 @@ import Image from 'next/image'
 
 const Home = () => {
   return (
-    <section className='h-full w-full relative shadow-gray-50' >
+    <section className='h-full e shadow-gray-50' >
 
 
 
 
-      <main className='relative flex  h-screen flex-col justify-between sm:w-full sm:h-screen '>
-        <motion.div className='  flex items-center justify-center h-screen flex-col flex-grow '
+      <main className='relative flex   flex-col justify-between  '>
+        <motion.div className='  flex items-center justify-center h-screen flex-col  '
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{opacity:0}}
