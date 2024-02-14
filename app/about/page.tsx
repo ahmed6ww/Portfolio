@@ -24,7 +24,7 @@ const about = () => {
               About
             </MotionH1>
             <MotionP
-              className="mx-20 xl:text-lg"
+              className="mx-20 xl:text-lg font-light tracking-widest"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -45,7 +45,7 @@ const about = () => {
               Languages
             </MotionH1>
             <MotionDiv
-              className="mx-20 mb-10 xl:text-lg"
+              className="mx-20 mb-10 xl:text-lg font-light tracking-widest"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
