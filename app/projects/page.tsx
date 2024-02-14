@@ -17,7 +17,7 @@ import { Grid, GridItem } from "@chakra-ui/react";
 
 const projects = () => {
   return (
-    <Grid
+    <Grid 
       templateColumns={{
         xl: "repeat(3, 1fr)",
         base: "repeat(1,2fr)",
@@ -25,7 +25,7 @@ const projects = () => {
       }}
      
       gap={9}
-      className=" ml-20 mt-20 mr-20  "
+      className=" ml-20 mt-20 mr-20 element "
     >
       <GridItem maxW={{lg:'md', base:''}} maxH={{sm:'md'}}  >
         <Card  >

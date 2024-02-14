@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="element text-white ">
        
-    <><Chakra>
+    <><Chakra >
     
         <Navbar />
         {children}

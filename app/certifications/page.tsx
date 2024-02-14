@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
+
 import {
   MotionDiv,
   MotionH1,
@@ -9,156 +10,91 @@ import {
   myButton,
   MotionButton,
 } from "@/app/components/MotionDiv";
-import { projects } from "../data";
-// import certificates from "../data";
+import { AI, webDev } from "../data";
+import { programmingLang } from "../data";
 
 const certifications = () => {
   return (
-    <div className=" h-full mt-44 ">
-      '{/* --------------Web Development-------------- */}
-      <h1 className="flex justify-center   mt-[280px] md:text-6xl text-3xl 2xl:text-6xl font-extrabold tracking-wider ">
-        Web Development
-      </h1>
-      {projects.map((link) => {
-        return(
-          
-          <Link href={link.href}
-          target="_blank">{link.name}</Link>
-        )
-      })}
-      
-      <MotionDiv
-        className="flex justify-center gap-14 mr-9 text-black  mt-32 ml-9 target "
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
-          <Link
-            href="https://coursera.org/share/2d7ddbf74d4fb84bbfcae97c43503c67"
-            target="_blank"
-          >
-            <Image
-              src="/principles-of-ux-ui-design.svg"
-              alt="pdf"
-              height={420}
-              width={420}
-              className="rounded-2xl "
-            />
-            <h1 className="text-white justify-center flex mt-4 text-lg">
-              Principles of UI/UX Design
-            </h1>
-          </Link>
-        </MotionButton>
-
-        <Link
-          href="https://coursera.org/share/ded4789af70898162b331507c1a3b722 "
-          target="_blank"
-          className="transition-transform duration-300 ease-in-out transform hover:scale-110"
-        >
-          <Image
-            src="/version-control.svg"
-            alt="pdf"
-            height={420}
-            width={420}
-            className="rounded-2xl "
-          />
-          <h1 className="text-white justify-center flex mt-4 text-lg">
-            Version Control
-          </h1>
-        </Link>
-      </MotionDiv>
-      {/* --------------Programming Langauges-------------- */}
-      <MotionH1 className="flex justify-center text-center mt-44 md:text-6xl ml text-3xl 2xl:text-6xl font-extrabold tracking-wider">
-        Programming Langauges
-      </MotionH1>
-      <MotionDiv
-        className="flex justify-center mr-9 gap-14 text-black  mt-32 ml-9 target "
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <Link
-          href="https://coursera.org/share/f0a0bacaf429dafe269d089a8f76996e"
-          target="_blank"
-          className="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
-        >
-          <Image
-            src="/python-for-everybody.svg"
-            alt="pdf"
-            height={420}
-            width={420}
-            className="rounded-2xl "
-          />
-          <h1 className="text-white justify-center flex mt-4 text-lg">
-            Python
-          </h1>
-        </Link>
-        <Link
-          href="https://coursera.org/share/169f2b2c02f37d84bf46a66d309d0b73 "
-          target="_blank"
-          className="transition-transform duration-300 ease-in-out transform hover:scale-110"
-        >
-          <Image
-            src="/typeScript-tutorial.svg"
-            alt="pdf"
-            height={420}
-            width={420}
-            className="rounded-2xl "
-          />
-          <h1 className="text-white justify-center flex mt-4 text-lg">
-            TypeScript
-          </h1>
-        </Link>
-      </MotionDiv>
-      {/* --------------Programming Langauges-------------- */}
-      <h1 className="flex justify-center mt-44 md:text-6xl text-3xl 2xl:text-6xl font-extrabold tracking-wider">
-        Artificial Intelligence
-      </h1>
-      <MotionDiv
-        className="flex justify-center gap-14 mr-9 text-black  mt-32 ml-9 target "
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <Link
-          href="https://coursera.org/share/3e9244d99d30add06a246485192da502"
-          target="_blank"
-          className="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
-        >
-          <Image
-            src="/ai-for-everyone.svg"
-            alt="pdf"
-            height={420}
-            width={420}
-            className="rounded-2xl "
-          />
-          <h1 className="text-white justify-center flex mt-4 text-lg">
-            AI For Everyone
-          </h1>
-        </Link>
-        <Link
-          href=" https://coursera.org/share/4cc1c82028f243c866cf5f6b9c4792f1"
-          target="_blank"
-          className="transition-transform duration-300 ease-in-out transform hover:scale-110 mb-11"
-        >
-          <Image
-            src="/generative-ai-for-everyone.svg"
-            alt="pdf"
-            height={420}
-            width={420}
-            className="rounded-2xl "
-          />
-          <h1 className="text-white justify-center flex mt-4 text-lg">
-            Generative AI For Everyone
-          </h1>
-        </Link>
-      </MotionDiv>
-      '
-    </div>
+    <section className="h-full ">
+      <div className="mt-32 tracking-wider">
+        <h1 className=" flex justify-center font-extrabold text-3xl md:text-5xl xl:text-5xl">
+          Web Development
+        </h1>
+        <div className="grid content-center grid-cols-2 gap-10 m-14 lg:grid-cols-3 mt-32">
+          {webDev.map((cert) => {
+            return (
+              <div>
+                <Link
+                  href={cert.address}
+                  className="flex flex-col  items-center"
+                >
+                  <Image
+                    className="rounded-xl w-[300px] xl:w-[400px]"
+                    src={cert.href}
+                    height={145}
+                    width={145}
+                    alt="Certificate"
+                  />
+                  <p className="mt-4">{cert.name}</p>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="mt-32 tracking-wider">
+        <h1 className=" flex item-center justify-center font-extrabold text-3xl md:text-5xl xl:text-5xl">
+          Programming Languages
+        </h1>
+        <div className="grid grid-cols-2 gap-10 m-14 lg:grid-cols-3 mt-32">
+          {programmingLang.map((cert) => {
+            return (
+              <div>
+                <Link
+                  href={cert.address}
+                  className="flex flex-col  items-center"
+                >
+                  <Image
+                    className="rounded-xl w-[300px] xl:w-[400px]"
+                    src={cert.href}
+                    height={145}
+                    width={145}
+                    alt="Certificate"
+                  />
+                  <p className="mt-4">{cert.name}</p>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="mt-32 tracking-wider">
+        <h1 className=" flex item-center justify-center font-extrabold text-3xl md:text-5xl xl:text-5xl">
+          Artificial Intellignece
+        </h1>
+        <div className="grid grid-cols-2 gap-10 m-14 lg:grid-cols-3 mt-32">
+          {AI.map((cert) => {
+            return (
+              <div>
+                <Link
+                  href={cert.address}
+                  className="flex flex-col items-center"
+                >
+                  <Image
+                    className="rounded-xl w-[300px] xl:w-[400px]"
+                    src={cert.href}
+                    height={145}
+                    width={145}
+                    alt="Certificate"
+                  />
+                  <p className="mt-4">{cert.name}</p>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 };
 
