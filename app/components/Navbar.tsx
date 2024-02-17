@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <>
       <nav className="flex mt-4">
-        <div className=" flex justify-between w-full md:w-auto ">
+        <div className=" flex justify-between w-full lg:w-auto ">
           <Link
             href="/"
             className="   object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
