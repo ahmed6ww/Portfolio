@@ -25,18 +25,18 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="flex ">
-        <div className=" flex justify-between w-full ">
+      <nav className="flex mt-4">
+        <div className=" flex justify-between w-full md:w-auto ">
           <Link
             href="/"
             className="   object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
           >
             <Image
               src="/home-logo.png"
-              height={40}
-              width={40}
+              height={90}
+              width={90}
               alt="Logo"
-              className=" w-20"
+              className=" "
             />
           </Link>
         </div>
