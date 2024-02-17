@@ -54,11 +54,11 @@ function Navbar() {
         <div
           className={
             nav
-              ? "absolute top-0 left-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300 z-10"
+              ? " absolute top-0 left-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300 z-10"
               : "absolute top-[-100%] left-[0%] bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300 "
           }
         >
-          <ul onClick={handleclick}>
+          <ul className="flex flex-col tracking-wider font-medium text-2xl gap-6" onClick={handleclick}>
             <li>
               <Link href="/projects">PROJECTS</Link>
             </li>
