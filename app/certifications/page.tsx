@@ -1,8 +1,7 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
-
+import { AI, webDev } from "../data";
+import { programmingLang } from "../data";
 import {
   MotionDiv,
   MotionH1,
@@ -10,8 +9,7 @@ import {
   myButton,
   MotionButton,
 } from "@/app/components/MotionDiv";
-import { AI, webDev } from "../data";
-import { programmingLang } from "../data";
+
 
 const certifications = () => {
   return (
