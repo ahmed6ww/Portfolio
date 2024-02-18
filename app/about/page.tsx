@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import {
   MotionDiv,
   MotionH1,
@@ -12,7 +11,7 @@ import Link from "next/link";
 const about = () => {
   return (
     <>
-      <section className="h-full">
+      <section className="h-screen">
         <div className=" flex flex-col lg:flex-row items-center lg:justify-center  ">
           <div className=" tracking-wide order-last lg:order-first lg:w-[1000px] xl:w-[800px] xl:mr-60">
             <MotionH1

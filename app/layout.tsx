@@ -1,35 +1,34 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/app/components/Navbar";
+import { Chakra } from "./components/Chakra";
 
-
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from '@/app/components/Navbar'
-import {Chakra} from "./components/Chakra"
-
-const inter = Inter({ subsets: ['latin'] })
-
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Ahmed',
-  description: 'Portfolio',
-}
+  title: "Ahmed",
+  description: "Portfolio",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className="element text-white ">
-       
-    <><Chakra >
-    
-        <Navbar />
-        {children}
-      </Chakra>
-       </>
-        </body>
+       <div>
+
+        
+          <Chakra>
+            <Navbar />
+            {children}
+          </Chakra>
+          </div>
+      
+      </body>
     </html>
-  )
+  );
 }

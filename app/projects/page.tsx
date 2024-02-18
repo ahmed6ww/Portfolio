@@ -25,7 +25,7 @@ const projects = () => {
       }}
      
       gap={9}
-      className=" ml-20 mt-20 mr-20 element "
+      className=" ml-20 mt-20 mr-20  h-screen "
     >
       <GridItem maxW={{lg:'md', base:''}} maxH={{sm:'md'}}  >
         <Card  >
